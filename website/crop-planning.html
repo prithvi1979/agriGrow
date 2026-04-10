@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriGrow | Crop Planning</title>
+  <meta
+    name="description"
+    content="Plan your next crop with guided inputs, projected timelines, and practical insights from AgriGrow."
+  >
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-light">
+  <header class="site-header site-header-solid">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="AgriGrow home">
+        <img src="assets/img/logo.png" alt="AgriGrow logo">
+      </a>
+      <div class="nav-center">
+        <button class="menu-toggle menu-toggle-dark" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <nav class="site-nav site-nav-light" id="site-menu" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="calculators.html">Calculators</a>
+          <a href="plant-health.html">Plant Health</a>
+          <a href="crop-planning.html" aria-current="page">Crop Planning</a>
+          <a href="mandi-rates.html">Mandi Rates</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </div>
+
+      <a class="download-app-cta" href="#mobile-app" aria-label="Download App">
+        <span class="download-icon" aria-hidden="true">
+          <span class="download-phone"></span>
+        </span>
+        <span class="download-copy">
+          <small>Install now</small>
+          <strong>Download App</strong>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="planner-page">
+    <section class="planner-shell container">
+      <div class="planner-heading">
+        <h1>Start a New Crop</h1>
+        <p>
+          Configure your next crop cycle with precision. Our models analyze soil, climate, and market signals to help optimize every step of the season.
+        </p>
+      </div>
+
+      <div class="planner-steps" aria-label="Crop planning steps">
+        <div class="planner-step is-active">
+          <span>1</span>
+          <small>Crop</small>
+        </div>
+        <div class="planner-step">
+          <span>2</span>
+          <small>Soil</small>
+        </div>
+        <div class="planner-step">
+          <span>3</span>
+          <small>Field</small>
+        </div>
+      </div>
+
+      <div class="planner-grid">
+        <section class="planner-form-card">
+          <div class="form-card-head">
+            <h2>Select your crop variety</h2>
+          </div>
+
+          <div class="variety-grid">
+            <article class="variety-card is-selected">
+              <img src="assets/img/card.jpeg" alt="Golden durum wheat crop preview">
+              <div>
+                <h3>Golden Durum Wheat</h3>
+                <p>High-yield, drought resilient</p>
+              </div>
+            </article>
+
+            <article class="variety-card variety-muted">
+              <img src="assets/img/card.jpeg" alt="Precision soybean crop preview">
+              <div>
+                <h3>Precision Soybeans</h3>
+                <p>Best for loam soil, 95 day cycle</p>
+              </div>
+            </article>
+          </div>
+
+          <form class="planner-form">
+            <label>
+              <span>Soil Type</span>
+              <select>
+                <option>Silt Loam (Optimal)</option>
+                <option>Clay Loam</option>
+                <option>Sandy Loam</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Location / Field ID</span>
+              <input type="text" value="North Plot 12">
+            </label>
+
+            <div class="planner-actions">
+              <a class="planner-link" href="index.html">Cancel</a>
+              <button class="button button-planner" type="button">Save &amp; Continue</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="planner-side">
+          <section class="planning-preview">
+            <div class="preview-head">
+              <p class="eyebrow">Live Preview</p>
+              <h2>Crop Planning Preview</h2>
+            </div>
+
+            <div class="timeline-list">
+              <article class="timeline-card">
+                <strong>14 Mar</strong>
+                <div>
+                  <h3>Sowing Commencement</h3>
+                  <p>Recommended 7am to 11am</p>
+                </div>
+              </article>
+              <article class="timeline-card">
+                <strong>02 Apr</strong>
+                <div>
+                  <h3>First Fertilization Phase</h3>
+                  <p>Nutrient dose based on soil moisture</p>
+                </div>
+              </article>
+              <article class="timeline-card">
+                <strong>28 Jun</strong>
+                <div>
+                  <h3>Projected Harvest</h3>
+                  <p>Target yield if weather remains stable</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="planner-insights">
+            <div class="insight-row">
+              <div>
+                <small>Expected Yield</small>
+                <strong>+12.4%</strong>
+              </div>
+              <span class="insight-trend">↗</span>
+            </div>
+
+            <div class="insight-split">
+              <article>
+                <small>Risk Level</small>
+                <strong>Low</strong>
+                <p>Stable weather window</p>
+              </article>
+              <article>
+                <small>Est. Market Price</small>
+                <strong>$420</strong>
+                <p>Per metric ton</p>
+              </article>
+            </div>
+
+            <div class="selected-plot">
+              <img src="assets/img/field-plot.jpg" alt="Selected crop field aerial view">
+              <div class="selected-plot-copy">
+                <small>Selected Plot</small>
+                <strong>Sector 4G, West Slope</strong>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <section class="planner-metrics">
+        <article class="metric-card">
+          <div class="metric-icon">IR</div>
+          <div>
+            <h3>Irrigation Estimates</h3>
+            <strong>1,240 L/acre</strong>
+            <p>Projected total requirement for full cycle</p>
+          </div>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-icon">SD</div>
+          <div>
+            <h3>Seed Needs</h3>
+            <strong>120 kg</strong>
+            <p>Based on optimal 12cm spacing</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="planner-promo" id="mobile-app">
+        <div class="planner-promo-copy">
+          <h2>Precision in your pocket. Take AgriGrow on the go.</h2>
+          <p>
+            Access real-time crop insights, weather alerts, and soil monitoring directly from your mobile device. Optimized for field use.
+          </p>
+          <div class="store-links">
+            <a class="store-badge" href="#contact">Apple App Store</a>
+            <a class="store-badge" href="#contact">Google Play</a>
+          </div>
+        </div>
+        <div class="planner-promo-graphic" aria-hidden="true">
+          <div class="planner-promo-circle">
+            <div class="planner-promo-phone"></div>
+          </div>
+          <div class="planner-promo-badge">+</div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-top">
+      <div class="footer-brand-block">
+        <img class="footer-logo" src="assets/img/logo.png" alt="AgriGrow logo">
+        <p>
+          A clean, modern farming platform for crop planning, plant health checks, and live mandi market support.
+        </p>
+      </div>
+      <form class="footer-form">
+        <label class="sr-only" for="footer-email">Email address</label>
+        <input id="footer-email" type="email" placeholder="Email address">
+        <button type="submit">Join</button>
+      </form>
+    </div>
+
+    <div class="container footer-grid">
+      <div>
+        <h3>Platform</h3>
+        <a href="index.html">Home</a>
+        <a href="crop-planning.html">Crop Planning</a>
+        <a href="mandi-rates.html">Mandi Rates</a>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="calculators.html">Calculators</a>
+        <a href="plant-health.html">Plant Health</a>
+        <a href="mandi-rates.html">Market Insights</a>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <a href="#contact">Sustainability Report</a>
+        <a href="#contact">Contact Support</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+      </div>
+      <div>
+        <h3>Stay Updated</h3>
+        <p>Subscribe for crop planning alerts and seasonal recommendations.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 AgriGrow. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriGrow | Plant Health</title>
+  <meta
+    name="description"
+    content="Upload a plant image, detect disease with Gemini AI, and view a clear plant health report with recommendations."
+  >
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-light">
+  <header class="site-header site-header-solid">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="AgriGrow home">
+        <img src="assets/img/logo.png" alt="AgriGrow logo">
+      </a>
+      <div class="nav-center">
+        <button class="menu-toggle menu-toggle-dark" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <nav class="site-nav site-nav-light" id="site-menu" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="calculators.html">Calculators</a>
+          <a href="plant-health.html" aria-current="page">Plant Health</a>
+          <a href="crop-planning.html">Crop Planning</a>
+          <a href="mandi-rates.html">Mandi Rates</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </div>
+
+      <a class="download-app-cta" href="#health-app" aria-label="Download App">
+        <span class="download-icon" aria-hidden="true">
+          <span class="download-phone"></span>
+        </span>
+        <span class="download-copy">
+          <small>Install now</small>
+          <strong>Download App</strong>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="health-page">
+    <section class="health-hero container">
+      <div class="health-hero-copy">
+        <p class="eyebrow">AI Plant Diagnosis</p>
+        <h1>Scan an affected leaf, flower, or plant part and get a clear AI report.</h1>
+        <p>
+          The farmer captures one image, uploads it in a single tap, and Gemini AI helps identify the condition, likely disease, and practical next steps.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#scan-flow">Start Scan Flow</a>
+          <a class="button button-secondary button-secondary-dark" href="#report-preview">See Report</a>
+        </div>
+      </div>
+
+      <div class="health-status-panel">
+        <div class="health-status-top">
+          <small>AI Model</small>
+          <strong>Gemini Analysis Enabled</strong>
+        </div>
+        <div class="health-status-card">
+          <span class="status-dot"></span>
+          <div>
+            <h3>Ready for upload</h3>
+            <p>Leaf, stem, flower, or full-plant images supported.</p>
+          </div>
+        </div>
+        <div class="health-status-card">
+          <span class="status-dot status-soft"></span>
+          <div>
+            <h3>Report includes</h3>
+            <p>Condition detection, disease likelihood, and recommended action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="health-flow container" id="scan-flow">
+      <div class="section-heading">
+        <p class="eyebrow">How It Works</p>
+        <h2>From one photo to one practical report.</h2>
+        <p>
+          The flow is designed to stay simple for the farmer while still showing an intelligent, trustworthy analysis experience.
+        </p>
+      </div>
+
+      <div class="health-flow-grid">
+        <article class="flow-card">
+          <div class="flow-number">01</div>
+          <h3>Capture Image</h3>
+          <p>Take a clear photo of the leaf, flower, stem, or affected section of the crop directly from the app.</p>
+        </article>
+        <article class="flow-card">
+          <div class="flow-number">02</div>
+          <h3>Single-Tap Upload</h3>
+          <p>Upload the image instantly with one tap so the user does not need to manage extra steps or confusing forms.</p>
+        </article>
+        <article class="flow-card">
+          <div class="flow-number">03</div>
+          <h3>Gemini AI Detection</h3>
+          <p>Gemini AI checks visual symptoms, identifies the likely condition, and classifies probable disease patterns.</p>
+        </article>
+        <article class="flow-card">
+          <div class="flow-number">04</div>
+          <h3>Actionable Report</h3>
+          <p>A clean report explains what the issue may be and what should be done next in simple farmer-friendly language.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="health-report-section container" id="report-preview">
+      <div class="health-upload-card">
+        <div class="upload-preview">
+          <img src="assets/img/plantcamera.jpg" alt="Uploaded plant health scan preview">
+        </div>
+        <div class="upload-meta">
+          <small>Uploaded Image</small>
+          <strong>Tomato Leaf - North Plot</strong>
+          <p>Single image uploaded from mobile app camera.</p>
+        </div>
+        <div class="upload-actions">
+          <span class="upload-badge">AI Scan Complete</span>
+          <a class="button button-tertiary" href="#health-app">Scan Another</a>
+        </div>
+      </div>
+
+      <div class="health-report-card">
+        <div class="report-head">
+          <div>
+            <p class="eyebrow">Generated Report</p>
+            <h2>AI Plant Health Summary</h2>
+          </div>
+          <div class="report-score">
+            <small>Confidence</small>
+            <strong>92%</strong>
+          </div>
+        </div>
+
+        <div class="report-grid">
+          <article class="report-panel">
+            <small>Detected Condition</small>
+            <strong>Leaf Spot Pattern</strong>
+            <p>Visible spotting and edge discoloration indicate a likely fungal stress response.</p>
+          </article>
+          <article class="report-panel">
+            <small>Likely Disease</small>
+            <strong>Early Blight</strong>
+            <p>Gemini AI matched the visual symptoms to common tomato early blight indicators.</p>
+          </article>
+        </div>
+
+        <div class="recommendation-card">
+          <small>What should be done</small>
+          <h3>Recommended next action</h3>
+          <ul class="feature-points compact-points">
+            <li>Remove heavily affected leaves to reduce spread.</li>
+            <li>Monitor moisture levels and avoid excess leaf wetness.</li>
+            <li>Apply the recommended treatment after confirming field conditions.</li>
+          </ul>
+        </div>
+
+        <div class="report-footer-points">
+          <div class="report-mini">
+            <small>Urgency</small>
+            <strong>Moderate</strong>
+          </div>
+          <div class="report-mini">
+            <small>Area Affected</small>
+            <strong>12% of visible leaf</strong>
+          </div>
+          <div class="report-mini">
+            <small>Follow Up</small>
+            <strong>Re-scan in 3 days</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="health-features container">
+      <div class="health-feature-copy">
+        <p class="eyebrow">Why Farmers Need This</p>
+        <h2>Fast diagnosis, simpler decisions, less uncertainty.</h2>
+        <p>
+          Instead of guessing from symptoms, farmers get a clean visual report that explains the issue and suggests what to do next.
+        </p>
+        <ul class="feature-points compact-points">
+          <li>Designed around one-tap upload from the field.</li>
+          <li>Useful for leaves, flowers, stems, and damaged crop parts.</li>
+          <li>Readable on mobile so the report works where the farmer actually is.</li>
+        </ul>
+      </div>
+      <div class="health-feature-panel">
+        <div class="insight-chip">Disease Detection</div>
+        <div class="insight-chip">Condition Severity</div>
+        <div class="insight-chip">Treatment Guidance</div>
+        <div class="insight-chip">Re-scan Reminder</div>
+      </div>
+    </section>
+
+    <section class="planner-promo container" id="health-app">
+      <div class="planner-promo-copy">
+        <h2>Carry AI crop diagnosis in your pocket.</h2>
+        <p>
+          Let farmers capture a plant photo, upload instantly, and read a Gemini-powered health report directly inside the app.
+        </p>
+        <div class="store-links">
+          <a class="store-badge" href="#contact">Apple App Store</a>
+          <a class="store-badge" href="#contact">Google Play</a>
+        </div>
+      </div>
+      <div class="planner-promo-graphic" aria-hidden="true">
+        <div class="planner-promo-circle">
+          <div class="planner-promo-phone"></div>
+        </div>
+        <div class="planner-promo-badge">+</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-top">
+      <div class="footer-brand-block">
+        <img class="footer-logo" src="assets/img/logo.png" alt="AgriGrow logo">
+        <p>
+          A clean, modern farming platform for calculators, crop planning, AI plant diagnosis, and live market insights.
+        </p>
+      </div>
+      <form class="footer-form">
+        <label class="sr-only" for="footer-email">Email address</label>
+        <input id="footer-email" type="email" placeholder="Email address">
+        <button type="submit">Join</button>
+      </form>
+    </div>
+
+    <div class="container footer-grid">
+      <div>
+        <h3>Platform</h3>
+        <a href="index.html">Home</a>
+        <a href="calculators.html">Calculators</a>
+        <a href="plant-health.html">Plant Health</a>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="crop-planning.html">Crop Planning</a>
+        <a href="mandi-rates.html">Mandi Rates</a>
+        <a href="plant-health.html">AI Diagnosis</a>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <a href="#contact">Support Center</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+      </div>
+      <div>
+        <h3>Stay Updated</h3>
+        <p>Subscribe for AI report updates and plant health alerts.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 AgriGrow. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
